@@ -30,14 +30,7 @@ cpt_primary.pack(pady=12, padx=10)
 #CPT Secondary winding
 cpt_secondary = customtkinter.CTkEntry(frame, placeholder_text="CPT Secondary Winding", width=150)
 cpt_secondary.pack(pady=12, padx=10)
-'''
-#Calculate button
 
-def button_click_event():
-    dialog = customtkinter.CTkInputDialog(text="Calculate", title="CALCULATE")
-    cpt_fuse_calc.calculate_fuse_size()
-    print("Number:", dialog.get_input())
-'''  
 def open_popup():
     top=customtkinter.CTkToplevel(main)
     top.geometry("500x100")
